@@ -1,15 +1,22 @@
-let nomeCadastro = document.getElementById("nomeCadastro");
-let btnCadastro = document.querySelector("#btnCadastro");
-let mensagem = document.getElementById("mensagem");
+let input = document.getElementById("item");
+let btnListar = document.querySelector("#btnListar");
+//let mensagem = document.getElementById("mensagem");
+let lista = document.getElementById("Lista")
 
-btnCadastro.addEventListener("click", ()=> {
+let complemento = input.value;
 
-    let nome = nomeCadastro.value;
+btnListar.addEventListener("click", () => {
 
-    if (!nome) {
-        mensagem.innerText = "Erro ao cadastrar nome!";
-
-    } else {
-        mensagem.innerText = `Seja bem vindo ${nome}`;   
+    if (!input.value) {
+        mensagem.className = "text-danger";
+        mensagem.innerText = "Digite um item!";
     }
+    
+    const li = document.createElement("li");
+    li.innerText = input.value;
+    lista.appendChild(li)
+
+    input.value = "";
+    // mensagem.innerText = `${lista}`;   
+
 })
