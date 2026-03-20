@@ -1,11 +1,11 @@
-let input = document.getElementById("item");
-let btnListar = document.querySelector("#btnListar");
+let input = document.getElementById("inputTarefa");
+let btnAdicionar = document.querySelector("#btnAdicionar");
 let mensagem = document.getElementById("mensagem");
-let lista = document.getElementById("Lista")
+let lista = document.getElementById("listaTarefas")
 
 //let complemento = input.value;
 
-btnListar.addEventListener("click", () => {
+btnAdicionar.addEventListener("click", () => {
 
     if (!input.value) {
         mensagem.innerText = "Tarefa vazio!";
