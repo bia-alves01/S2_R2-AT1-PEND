@@ -12,8 +12,9 @@ btnAdicionar.addEventListener("click", () => {
     } else {
         //Criar um item 
         let itemNovo = document.createElement("li");
+        itemNovo.className = "list-group-item"
         itemNovo.innerText = input.value
-        lista.appendChild(itemNovo)
+        listaTarefas.appendChild(itemNovo)
         mensagem.innerText = `Criado com sucesso`
 
         input.value = "";
@@ -24,6 +25,7 @@ btnAdicionar.addEventListener("click", () => {
         btnRemover.className = "btn btn-outline-danger m-3"
         itemNovo.appendChild(btnRemover);
 
+        //Criar função do botão remover
         btnRemover.addEventListener("click", ()=> {
             itemNovo.remove();
         })
