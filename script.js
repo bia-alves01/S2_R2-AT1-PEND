@@ -17,7 +17,5 @@ btnListar.addEventListener("click", () => {
     
         input.value = "";
     }
-    
-    // mensagem.innerText = `${lista}`;   
 
 })
