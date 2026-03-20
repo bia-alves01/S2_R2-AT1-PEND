@@ -12,7 +12,7 @@ btnAdicionar.addEventListener("click", () => {
     } else {
         //Criar um item 
         let itemNovo = document.createElement("li");
-        itemNovo.className = "list-group-item"
+        itemNovo.className = "list-group-item   "
         itemNovo.innerText = input.value
         listaTarefas.appendChild(itemNovo)
         mensagem.innerText = `Criado com sucesso`
@@ -31,6 +31,13 @@ btnAdicionar.addEventListener("click", () => {
         })
 
         itemNovo.appendChild(itemNovo);
+
+        //Criar um check
+        let check = dcument.createElement("checkbox")
+        check.className = "form-check"
+        itemNovo.appendChild(check);
+
+
     }
     
 
