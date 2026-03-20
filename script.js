@@ -1,6 +1,5 @@
-let textoAlterar = document.getElementById("textoAlterar");
+let textoAlterar = document.getElementById("alterar");
 let btnAlterar = document.querySelector("#btnAlterar");
-let mensagem = document.getElementById("mensagem");
 
 btnAlterar.addEventListener("click", ()=> {
 
