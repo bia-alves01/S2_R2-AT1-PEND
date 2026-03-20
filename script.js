@@ -1,11 +1,11 @@
 let input = document.getElementById("item");
-let btnListar = document.querySelector("#btnListar");
+let btnAdicionar = document.querySelector("#button");
 //let mensagem = document.getElementById("mensagem");
 let lista = document.getElementById("Lista")
 
 let complemento = input.value;
 
-btnListar.addEventListener("click", () => {
+btnAdicionar.addEventListener("click", () => {
 
     if (!input.value) {
         mensagem.className = "text-danger";
